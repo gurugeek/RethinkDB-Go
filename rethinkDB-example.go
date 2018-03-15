@@ -9,7 +9,7 @@ import (
 
 var session *r.Session
 
-// Reptile estructura para mappear del go a rethink
+// Reptile estructura para mappear de go a rethink
 type Reptile struct {
 	ID     string  `gorethink:"id,omitempty"`
 	Name   string  `gorethink:"name"`
@@ -54,7 +54,7 @@ func main() {
 
 }
 
-// Crea la tabla persona
+// Crea la tabla reptiles
 func createTable() {
 	result, err := r.DB("test").TableCreate("reptiles").RunWrite(session)
 	if err != nil {
