@@ -122,7 +122,7 @@ func deleteReptile(id string) {
 	printResult("Delete", result)
 }
 
-//
+// ...
 func printResult(method string, v interface{}) {
 	fmt.Println(fmt.Sprintf("%s successful...", method))
 	if v != nil {
@@ -130,7 +130,7 @@ func printResult(method string, v interface{}) {
 	}
 }
 
-//
+// ...
 func printObject(v interface{}) {
 	vBytes, _ := json.Marshal(v)
 	fmt.Println(string(vBytes))
